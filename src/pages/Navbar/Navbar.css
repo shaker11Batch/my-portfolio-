@@ -1,46 +1,83 @@
 body {
-    background: #1f242d;
+  background: #1f242d;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 25px 9%;
-    /* background: slateblue; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 9%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.navbar ul {
-    display: flex;
+.navbar-li {
+  display: flex;
+  gap: 35px;
 }
 
-.navbar ul li {
-    list-style: none;
-    margin-left: 35px;
+.navbar-li li {
+  list-style: none;
 }
 
-.navbar ul li a {
-    font-size: 20px;
-    font-weight: 500;
-    transition: .5s;
+.navbar-li li a {
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-.navbar ul li:hover a,
-.navbar ul li.active {
-    color: #7cf03d;
+.navbar-li li:hover a,
+.navbar-li li.active a {
+  color: #7cf03d;
+}
+
+/* Menu icon - hidden on desktop */
+.menu {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* -------- Responsive Styles -------- */
+@media (max-width: 750px) {
+  .menu {
+    display: block;
+  }
+
+  .navbar-li {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #1f242d;
+    width: 220px;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navbar-li li {
+    margin: 15px 0;
+  }
+
+  /* Open Menu */
+  .navbar-li.open {
+    right: 0;
+  }
 }
