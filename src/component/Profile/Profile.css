@@ -4,6 +4,7 @@
     height: 100vh;
     padding: 60px 9% 0;
     color: #fff;
+    gap: 30px;
 }
 
 .profile-info h1 {
@@ -68,7 +69,7 @@
     position: relative;
     width: 32vw;
     height: 32vw;
-    /* background: red; */
+    background: red;
     border-radius: 50%;
     padding: 5px;
     display: flex;
@@ -105,4 +106,23 @@
     width: 85%;
     object-fit: cover;
     mix-blend-mode: lighten;
+}
+
+
+/* -------- Responsive Styles -------- */
+@media (max-width: 750px) {
+  .profile {
+    flex-direction: column-reverse
+    
+  }
+  .btn-sci{
+    flex-direction: column; 
+
+}
+.sci{
+    margin-top: 15px;
+}
+.profile-info{
+    text-align: center;
+}
 }
