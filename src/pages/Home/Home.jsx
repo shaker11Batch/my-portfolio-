@@ -11,9 +11,9 @@ const Home = () => {
         <div>
             <Navbar />
             <Profile></Profile>
-         
+           <Skills /> 
             <About/>
-            <Skills /> 
+          
             <Project />
              <Contact/>
         </div>
