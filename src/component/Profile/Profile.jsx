@@ -1,6 +1,6 @@
 import React from 'react';
 import './Profile.css'
-import { Github, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Github, Linkedin, Twitter, Youtube } from 'lucide-react';
 const Profile = () => {
     return (
         <div className='profile'>
@@ -11,10 +11,10 @@ const Profile = () => {
                 <div className='btn-sci'>
                     <a href="" className='btn'>Download CV</a>
                     <div className="sci">
-                        <a href=""><Github /></a>
-                        <a href=""><Linkedin /></a>
-                        <a href=""><Youtube /></a>
-                        <a href=""><Twitter /></a>
+                        <a href="https://github.com/shaker11Batch"><Github /></a>
+                        <a href="https://www.facebook.com/shaker449"><Facebook /></a>
+                        
+                        
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
     return (
-        <div>
+        <div id='contact'>
                 {/* Heading */}
         <motion.h2
           className="text-4xl font-bold text-center my-4 mb-4"
