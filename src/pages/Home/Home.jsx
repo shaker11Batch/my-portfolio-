@@ -11,10 +11,11 @@ const Home = () => {
         <div>
             <Navbar />
             <Profile></Profile>
-          {/* <Contact/> */}
+         
             <About/>
             <Skills /> 
-            <Project/>
+            <Project />
+             <Contact/>
         </div>
     );
 };
